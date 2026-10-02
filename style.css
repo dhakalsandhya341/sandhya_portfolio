@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #172554;
+    color: white;
+    padding: 25px 8%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+nav i {
+    margin-right: 5px;
+}
+
+
+/* Common Section */
+
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+section h2 {
+    color: #172554;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+
+/* About Section */
+
+#about {
+    text-align: center;
+}
+
+#about img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #2563eb;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: 0 auto 15px;
+}
+
+
+/* Skills Section */
+
+#skills dl {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 18px;
+    align-items: center;
+}
+
+#skills dt {
+    font-weight: bold;
+    color: #172554;
+}
+
+#skills dt i {
+    color: #2563eb;
+    width: 25px;
+    margin-right: 5px;
+}
+
+#skills dd {
+    color: #555;
+}
+
+
+/* Projects Section */
+
+article {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 25px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #f8fafc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+article img {
+    width: 240px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.project-content h3 {
+    color: #172554;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.project-content h3 i {
+    color: #2563eb;
+    margin-right: 5px;
+}
+
+.project-content p {
+    margin-bottom: 12px;
+}
+
+.project-content a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact Section */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-info h3 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: #2563eb;
+    width: 22px;
+}
+
+.contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+/* Form */
+
+form p {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 11px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #172554;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    section {
+        margin: 20px 15px;
+        padding: 25px 20px;
+    }
+
+    #about img {
+        width: 160px;
+        height: 160px;
+    }
+
+    #skills dl {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    #skills dd {
+        margin-bottom: 10px;
+    }
+
+    article {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    article img {
+        width: 100%;
+        height: 190px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+}
